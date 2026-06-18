@@ -33,6 +33,7 @@
   .pagehead{background:linear-gradient(rgba(52,39,26,.9),rgba(52,39,26,.94)),url('https://i0.wp.com/www.waltzingmatildahistory.com.au/wp-content/uploads/2019/03/cropped-Background16.jpg?fit=1600,500&ssl=1');background-size:cover;background-position:center;color:#f3e7cf;padding:54px 0 48px;text-align:center}
   .pagehead h1{color:#fdf6e6;font-size:3rem}
   .pagehead p{max-width:680px;margin:8px auto 0;color:#e8d9bb;font-family:var(--serif);font-style:italic;font-size:1.3rem}
+  .pagehead .prov{max-width:720px;margin:14px auto 0;color:#d8c4a0;font-family:var(--sans);font-style:normal;font-size:.95rem;line-height:1.55}
   .stats{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;margin-top:24px}
   .stat b{display:block;font-family:var(--serif);font-size:2.2rem;color:var(--gold);line-height:1}
   .stat span{font-size:.72rem;letter-spacing:1px;text-transform:uppercase;color:#d8c4a0}
@@ -43,7 +44,7 @@
   .controls input[type=search]{flex:1;min-width:240px}
   .count{font-size:.85rem;color:var(--soft);margin-left:auto}
   /* TABLE */
-  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:50px}
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:32px}
   table{width:100%;border-collapse:collapse;font-size:.94rem}
   thead th{position:sticky;top:0;background:var(--deep);color:#f3e7cf;text-align:left;padding:13px 14px;cursor:pointer;font-family:var(--sans);font-size:.74rem;text-transform:uppercase;letter-spacing:.6px;white-space:nowrap;user-select:none}
   thead th:hover{background:#46341f}
@@ -57,6 +58,10 @@
   a.nfsa:hover{background:var(--rust)}
   .noid{color:#b3a489}
   .yr{font-variant-numeric:tabular-nums}
+  .ack{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:28px 32px;margin:0 0 50px}
+  .ack h2{font-size:1.5rem;margin-bottom:.6em}
+  .ack p{margin:0 0 1em;color:var(--soft);max-width:760px;font-size:1rem;line-height:1.65}
+  .ack p:last-child{margin-bottom:0}
   footer.foot{background:var(--deep);color:#cbb894;padding:46px 0 34px;font-size:.9rem}
   footer.foot .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
   footer.foot a{color:#e7d6b2;text-decoration:none;margin-right:18px}
@@ -91,6 +96,7 @@
     <div class="eyebrow" style="color:var(--gold)">The Recordings Archive</div>
     <h1>Waltzing Matilda, recorded</h1>
     <p>One song, sung a thousand ways &mdash; cross-referenced to the National Film and Sound Archive.</p>
+    <p class="prov">Based on Graham McDonald&rsquo;s discography of recorded versions, with catalogue links to the National Film and Sound Archive of Australia.</p>
     <div class="stats">
       <div class="stat"><b id="s-total">0</b><span>Recordings listed</span></div>
       <div class="stat"><b id="s-link">0</b><span>Linked to the NFSA</span></div>
@@ -121,6 +127,13 @@
     <tbody id="body"></tbody>
   </table>
   </div>
+
+  <section class="ack" aria-labelledby="ack-heading">
+    <div class="eyebrow">Sources</div>
+    <h2 id="ack-heading">Acknowledgements</h2>
+    <p>This searchable archive draws on the discography compiled by <strong>Graham McDonald</strong>, who documented hundreds of recorded versions of <em>Waltzing Matilda</em> over many years. We are grateful for his willingness to share that research.</p>
+    <p>Where a catalogue record exists, each entry links to the <a href="https://pro.nfsa.gov.au/" target="_blank" rel="noopener">National Film and Sound Archive of Australia (NFSA)</a> &mdash; whose public database makes these recordings discoverable. The NFSA holds Australia&rsquo;s national collection of sound recordings; this site does not host audio.</p>
+  </section>
 </div>
 <footer class="foot">
   <div class="wrap">
