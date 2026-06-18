@@ -112,6 +112,7 @@
       <th data-k="album">Album / Release <span class="ar"></span></th>
       <th data-k="year">Year <span class="ar"></span></th>
       <th data-k="fmt" class="hide-sm">Format <span class="ar"></span></th>
+      <th data-k="genre" class="hide-sm">Genre <span class="ar"></span></th>
       <th data-k="label" class="hide-sm">Label <span class="ar"></span></th>
       <th data-k="cat">NFSA <span class="ar"></span></th>
     </tr></thead>
@@ -164,6 +165,7 @@ function render(){
     <td class="alb">${esc(d.album)||'<span class=noid>&mdash;</span>'}</td>
     <td class="yr">${esc(d.year)}</td>
     <td class="hide-sm">${esc(fmtClass(d))}</td>
+    <td class="hide-sm">${esc(d.genre)||'<span class=noid>&mdash;</span>'}</td>
     <td class="hide-sm">${esc(d.label)}</td>
     <td>${d.url?`<a class="nfsa" href="${d.url}" target="_blank" rel="noopener">View &#8599;</a>`:(d.cat?`<span class=noid>${esc(d.cat)}</span>`:'<span class=noid>&mdash;</span>')}</td>
   </tr>`).join('');
